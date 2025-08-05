@@ -31,7 +31,7 @@ aws iam create-policy \
 
 ### Create IAM Role and K8 ServiceAccount.
 
-Mapping between IAM ROle and K8 Service account
+Mapping between IAM Role and K8 Service account
 
 ```
 eksctl create iamserviceaccount \
