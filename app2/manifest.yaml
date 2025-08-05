@@ -56,7 +56,7 @@ metadata:
     alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:445567085619:certificate/72c8a449-b3fa-4d99-b8f6-077e007eec2d
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
-    #alb.ingress.kubernetes.io/group.name: siva3150
+    alb.ingress.kubernetes.io/group.name: siva3150
 spec:
   ingressClassName: alb
   rules:
