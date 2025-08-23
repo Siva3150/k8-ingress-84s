@@ -24,7 +24,7 @@ curl -o iam-policy.json https://raw.githubusercontent.com/kubernetes-sigs/aws-lo
 
 ```
 aws iam create-policy \
-    --policy-name AWSLoadBalancerControllerIAMPolicy \
+    --policy-name RoboshopMysqlSecretReader \
     --policy-document file://iam-policy.json
 
 ```
@@ -38,7 +38,7 @@ eksctl create iamserviceaccount \
 --cluster=$CLUSTER_NAME \
 --namespace=kube-system \
 --name=aws-load-balancer-controller \
---attach-policy-arn=arn:aws:iam::$ACC_ID:policy/AWSLoadBalancerControllerIAMPolicy \
+--attach-policy-arn=arn:aws:iam::445567085619:policy/RoboshopMysqlSecretReader \
 --override-existing-serviceaccounts \
 --region $REGION_CODE \
 --approve
